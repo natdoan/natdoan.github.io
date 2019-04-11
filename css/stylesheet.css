@@ -1,0 +1,226 @@
+#homeheader {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url("../images/yellowflowers.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Times New Roman", sans-serif ;font-size: 10px;
+
+}
+
+span {
+    background-color: #7fd9ff;
+    padding: 7px;
+}
+
+.mastext1 {
+    font-family: "Times New Roman", sans-serif ;font-size: 65px;
+}
+
+.navbar {
+    background-color: #7fd9ff;
+
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: white;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-brand, .nav-link {
+    color: white;
+    font-family: "Times New Roman", sans-serif ;font-size: 18px;
+    font-weight: initial;
+    text-shadow: 2px -1px #3fc6ff;
+
+
+}
+
+.nav-item {
+    padding-left: 9px;
+}
+
+.py-5, .loginback, .anicarousel, .foodbody, .musicbody, .pianobody, .yogabody, .showbody, .gamesbody, .questionsbody {
+    background-image: url("../images/background1.jpg");
+}
+
+.btn {
+    background-color: #7fd9ff;
+    color: white;
+    font-family: "Times New Roman", sans-serif ;font-size: 18px;
+}
+
+footer {
+    background-color: #7fd9ff;
+    color: white;
+    font-family: "Times New Roman", sans-serif ;font-size: 15px;
+    text-align: right;
+}
+
+#loginheader {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url("../images/lemonslimes.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Times New Roman", sans-serif ;font-size: 10px;
+
+}
+
+
+
+#animalheader {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url("../images/puppy1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Times New Roman", sans-serif ;font-size: 10px;
+
+}
+
+.carousel-item {
+    width:100%;
+    height:550px;
+    border-radius: 5px;
+}
+
+#foodheader {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url("../images/kiwi.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Times New Roman", sans-serif ;font-size: 10px;
+
+}
+
+.mapouter {
+    position:relative;
+    text-align:right;
+    height:396px;
+    width:100%;
+
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:396px;
+    width: 100%;
+}
+
+.restobuttons {
+    padding: 5px;
+    text-align: center;
+}
+
+#musicheader {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url("../images/guitar1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Times New Roman", sans-serif ;font-size: 10px;
+
+}
+
+.display-4 {
+    font-size: 36pt;
+    text-align: center;
+}
+
+#recommendbox {
+    font-size: 16pt;
+}
+
+#pianoheader {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url("../images/grass.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Times New Roman", sans-serif ;font-size: 10px;
+
+}
+
+.audiobox {
+    display: table;
+    margin: 0 auto;
+}
+
+#yogaheader {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url("../images/yogamat.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Times New Roman", sans-serif ;font-size: 10px;
+
+}
+
+#showheader {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url("../images/room.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Times New Roman", sans-serif ;font-size: 10px;
+
+}
+
+#gamesheader {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url("../images/game.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Times New Roman", sans-serif ;font-size: 10px;
+
+}
+
+#starbound {
+    display: table;
+    margin: 0 auto;
+}
+
+#questionsbutton {
+    display: table;
+    margin: 0 auto;
+}
+
+#questionsheader {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url("../images/flowers.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Times New Roman", sans-serif ;font-size: 10px;
+
+}
+
+iframe {
+    width: 100%;
+}

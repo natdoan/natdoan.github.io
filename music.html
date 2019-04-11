@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBFOGueleo9h3WN_er6bJx95uYTwexHKhU",
+            authDomain: "final-344ce.firebaseapp.com",
+            databaseURL: "https://final-344ce.firebaseio.com",
+            projectId: "final-344ce",
+            storageBucket: "final-344ce.appspot.com",
+            messagingSenderId: "782897578437"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="js/myscript.js"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+
+</head>
+<body onload="loggedin()">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">Natalie Doan</a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+            <ul class="navbar-nav navbar-right ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="animals.html">Animals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="food.html">Food</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="music.html">Music</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="piano.html">Piano</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="yoga.html">Yoga</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shows.html">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="games.html">Games</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="questions.html">Questions</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Full Page Image Header with Vertically Centered Content -->
+<header class="masthead" id="musicheader">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 text-center">
+                <p class="mastext1"><span>Some of my favourite songs!</span></p>
+                <p class="lead"><span>Recommend me some of yours.</span></p>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Page Content -->
+<div class="musicbody"><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h1 class="display-4">Jonas Brothers - Sucker</h1>
+                        <iframe height="315" src="https://www.youtube.com/embed/CnAmeh0-E-U" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h1 class="display-4">H.E.R. - Focus</h1>
+                        <iframe height="315" src="https://www.youtube.com/embed/Z5ze4CUAkE8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class = "col-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h1 class="display-4">Recommend me a song!</h1>
+                        <form>
+                            <div class="form-group">
+                                <label for="nameInput">Name</label>
+                                <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="songInput">Song Title</label>
+                                <input type="text" class="form-control" id="songInput" placeholder="Enter the song title">
+                            </div>
+                            <div class="form-group">
+                                <label for="artistInput">Artist</label>
+                                <input type="text" class="form-control" id="artistInput" placeholder="Enter the artist">
+                            </div>
+                            <button type="button" class="btn" onclick="recommend()">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h1 class="display-4">Recommendations</h1><br>
+                        <div id="recommendbox">
+                            → Emily recommended Single Ladies by Beyonce<br>
+                            → Crystal recommended Dancing Queen by ABBA
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+    <footer>Copyright © 2019 Natalie Doan</footer>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

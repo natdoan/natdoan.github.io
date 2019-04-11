@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBFOGueleo9h3WN_er6bJx95uYTwexHKhU",
+            authDomain: "final-344ce.firebaseapp.com",
+            databaseURL: "https://final-344ce.firebaseio.com",
+            projectId: "final-344ce",
+            storageBucket: "final-344ce.appspot.com",
+            messagingSenderId: "782897578437"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="js/myscript.js"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+
+</head>
+<body onload="loggedin()">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">Natalie Doan</a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+            <ul class="navbar-nav navbar-right ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="animals.html">Animals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="food.html">Food</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="music.html">Music</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="piano.html">Piano</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="yoga.html">Yoga</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shows.html">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="games.html">Games</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="questions.html">Questions</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Full Page Image Header with Vertically Centered Content -->
+<header class="masthead" id="questionsheader">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 text-center">
+                <p class="mastext1"><span>Still have unanswered questions?</span></p>
+                <p class="lead"><span>Feel free to ask me!</span></p>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Page Content -->
+<div class="questionsbody"><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="display-4">Ask me a Question</h1>
+                        <form onsubmit="questions()">
+                            <div class="form-group">
+                                <label for="nameInput">Name</label>
+                                <input type="text" class="form-control" id="nameInput" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="emailInput">Email address</label>
+                                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email" required>
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneInput">Phone number</label>
+                                <input type="tel"  class="form-control" name="phone" id="phoneInput" placeholder="Enter phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                                <small id="phoneInput1" class="form-text text-muted">Format: 555-555-5555</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="questionInput">Question</label>
+                                <textarea class="form-control" id="questionInput"  placeholder="Enter your question" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="genderInput">Gender</label>
+                                <select id="genderInput" name="gender">
+                                    <option value="male">male</option>
+                                    <option value="female">female</option>
+                                    <option value="other">other</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-lg btn-block" id="questionsbutton">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>Copyright © 2019 Natalie Doan</footer>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
